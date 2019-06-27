@@ -4,41 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio About Me</title>
+
+    <!-- Bootstrap CSS order: 1-reset.css 2-bootstrap css 3-mycss -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+<!--navbar is flexbox-->
+  <nav class="navbar navbar-expand navbar-light bg-light px-5 py-0">
+    <div class="container">  <!--put div inside navbar to align the content only-->
 
-  <header id="main-header">
-    <div class="container">
-      <a href="index.html" id="logo">Tracy Nguyen</a>  
-        <nav>
-          <a href="contact.html">Contact</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="index.html">About</a>
-        </nav>
-    </div>
-  </header>
+      <a class="navbar-brand text-white m-0 p-4" style="background-color: #4aaaa5" href="index.html">
+        Tracy Nguyen
+      </a>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
-      
-      <img class="mypic" width="30%" src="assets/images/My-Profle-Pic.png" alt="sorry!">
+      <!-- Very often, especially on small screens, you want to hide the navigation links and replace them with a button that should reveal them when clicked on.
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipis elit, sed do eiusmod tempor incididunt ut labore s dolore magna aliqua. Mattis velit sed ullamcorper morbi. Euismod laciniaat quis risus sed vulputate. Tincidunt praesent semper feugiat nibh sed. Tellus in hac habitasse platea dictumst vestibulum rhoncus. </p>
+      To create a collapsible navigation bar, use a button with class="navbar-toggler", data-toggle="collapse" and data-target="#thetarget". Then wrap the navbar content (links, etc) inside a div element with class="collapse navbar-collapse", followed by an id that matches the data-target of the button: "thetarget". -->
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    </section>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     
-  </div>
-   
-  <footer>
-   <div class="container"> 
-     Copyright &#169;
-  </div>
+      <!--Navbar is flexbox, set width to 100%, align text with justify content-->
+      <div class="collapse navbar-collapse" id="navbarSupportedConetnt">
+        <ul class="navbar-nav w-100 justify-content-end">
+          <li class="nav-item pr-2"> <!--padding right-->
+            <a class="nav-link py-0 active" href="index.html">About</a>
+          </li>
+          <li class="nav-item border-left px-2">
+            <a class="nav-link py-0" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item border-left pl-2">
+            <a class="nav-link py-0" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  
+<!-- .col-12 has to be placed directly under its parent .row in order to style with float-->
+  <section class="container">
+    <article class="row bg-light my-5">
+      <div class="col-12 p-4">
+        <h1 class="border-bottom pb-3 ">About Me</h1>
+  
+        <img class="img-fluid float-left py-3 pr-3" width="30%" src="assets/images/My-Profle-Pic.png" alt="sorry!">
+  
+        <p>Lorem ipsum dolor sit amet, consectetur adipis elit, sed do eiusmod tempor incididunt ut labore s dolore magna aliqua. Mattis velit sed ullamcorper morbi. Euismod laciniaat quis risus sed vulputate. Tincidunt praesent semper feugiat nibh sed. Tellus in hac habitasse platea dictumst vestibulum rhoncus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+      </div>
+    </article>
+  </section>
+
+
+  <footer id="sticky-footer" style="background-color: #666666" class="pt-4 text-white-50">
+      <div class="container text-center w-100">
+          Copyright &copy;
+      </div>
   </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
