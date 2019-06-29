@@ -15,6 +15,7 @@
 
 <!--!Navigation Bar-->
 <body>
+
 <!--navbar is flexbox-->
   <nav class="navbar navbar-expand navbar-light bg-light px-5 py-0">
     <div class="container">  <!--put div inside navbar to align the content only-->
@@ -35,10 +36,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedConetnt">
         <ul class="navbar-nav w-100 justify-content-end">
           <li class="nav-item pr-2"> <!--padding right-->
-            <a class="nav-link py-0 active" href="index.html">About</a>
+            <a class="nav-link py-0" href="index.html">About</a>
           </li>
           <li class="nav-item border-left px-2">
-            <a class="nav-link py-0" href="portfolio.html">Portfolio</a>
+            <a class="nav-link py-0 active" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item border-left pl-2">
             <a class="nav-link py-0" href="contact.html">Contact</a>
@@ -54,47 +55,47 @@
 
   <section class="container">
     <article class="row bg-light my-5">
-      <div class="col-12 p-4">
+      <div class="col-sm-12 p-sm-4" id="gallery">
         <h1 class="border-bottom pb-3">Portfolio</h1>
 
-        <div class="row py-4">
+        <div class="row py-4 text-white text-center">
           <div class="col-4">
-            <img class="img-fluid w-100" src="assets/images/cartman2.jpg" alt="Cartman">
-            <h3 class="carousel-caption d-inline" style="background-color: #4aaaa5">Example 1</h3>
+            <img class="img-fluid" src="assets/images/cartman2.jpg" alt="Cartman">
+            <h3>Example 1</h3>
           </div>
-          <div class="col-4">
-            <img class="img-fluid w-100" src="assets/images/buttter.jpg" alt="buttter">
-            <h3 class="carousel-caption d-block" style="background-color: #4aaaa5">Example 2</h3>
 
+          <div class="col-4"> <!--? .img-fluid applies mw-100 and auto height -->
+            <img class="img-fluid" src="assets/images/buttter.jpg" alt="buttter">
+            <h3>Example 2</h3>
           </div>
+
           <div class="col-4">
-            <img class="img-fluid w-100" src="assets/images/Kyle.jpg" alt="Kyle">
-            <h3 class="carousel-caption d-block" style="background-color: #4aaaa5">Example 3</h3>
+            <img class="img-fluid" src="assets/images/Kyle.jpg" alt="Kyle">
+            <h3>Example 3</h3>
           </div>
         </div>
 
-          <div class="row py-4">
-              <div class="col-4">
-                <img class="img-fluid w-100" src="assets/images/stan.jpg" alt="stan">
-                <h3 class="carousel-caption d-block" style="background-color: #4aaaa5">Example 4</h3>
-                
-              </div>
-              <div class="col-4">
-                <img class="img-fluid w-100" src="assets/images/kenny.png" alt="Kenny">
-                <h3 class="carousel-caption d-block" style="background-color: #4aaaa5">Example 5</h3>
-              </div>
+        <div class="row py-4 text-white text-center">
+          <div class="col-4">
+            <img class="img-fluid" src="assets/images/stan.jpg" alt="stan">
+            <h3>Example 4</h3>
+            
+          </div>
+          <div class="col-4">
+            <img class="img-fluid" src="assets/images/kenny.png" alt="Kenny">
+            <h3>Example 5</h3>
           </div>
         </div>
-
+          
       </div>
     </article>
   </section>
 
 <!--!Footer-->
 
-<footer id="sticky-footer" style="background-color: #666666" class="pt-4 text-white-50 w-100">
-    <div class="container text-center">
-        Copyright &copy;
+<footer class="footer" style="background-color: #666666" class="pt-4 text-white-50 w-100">
+    <div class="container">
+        <p class="text-center">Copyright &copy;</p>
     </div>
 </footer>
 
