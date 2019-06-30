@@ -5,8 +5,6 @@ body {
     color: #777777;
     background-image: url("../images/beige-tiles.png");
     background-attachment: fixed;
-    max-height: 100%;
-    position: relative;
   }
 
 /* Navigation */
@@ -17,6 +15,9 @@ body {
   max-width: 960px;
 }
 
+main > .container {
+  padding: 80px 15px;
+}
 .navbar-brand, h1 {
   font-family: Georgia, Times, "Times New Roman", serif;   
   font-size: 30px;
@@ -29,19 +30,14 @@ h1 {
 
 /* Footer */
 .footer {
-  position: absolute;
   border-top: 8px solid #4aaaa5;
-  width: 100%;
-  margin-top: 90em;
+  background-color: #666666;
 }
 
 /* Portfolio Gallery */
-h3 {
-  background: #4aaaa5;
-}
-
-#gallery .img-fluid {
+#gallery img {
   max-width: 250px;
+  padding: 20px 0;
 }
 
  

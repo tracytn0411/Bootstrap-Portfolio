@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
     
 <head>
+    <!-- Required meta tag for Bootstrap-->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Portfolio About Me</title>
 
     <!-- Bootstrap CSS order: 1-reset.css 2-bootstrap css 3-mycss -->
@@ -14,13 +17,13 @@
 </head>
 
 <!--!Navigation Bar-->
-<body>
+<body class="d-flex flex-column h-100">
 
 <!--navbar is flexbox-->
-  <nav class="navbar navbar-expand navbar-light bg-light px-5 py-0">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light px-5 py-0">
     <div class="container">  <!--put div inside navbar to align the content only-->
 
-      <a class="navbar-brand text-white m-0 p-4" style="background-color: #4aaaa5" href="index.html">
+      <a class="navbar-brand text-white p-4" style="background-color: #4aaaa5" href="index.html">
         Tracy Nguyen
       </a>
 
@@ -53,25 +56,28 @@
 <!--!Main Section-->
 
 <!-- .col-12 has to be placed directly under its parent .row in order to style with float-->
-  <section class="container">
-    <article class="row bg-light mt-5">
-      <div class="col-sm-12 p-sm-4 clearfix">
-        <h1 class="border-bottom pb-3 ">About Me</h1>
-  
-        <img class="img-fluid float-left py-3 pr-3" width="30%" src="assets/images/My-Profle-Pic.png" alt="sorry!">
-  
-        <p>Lorem ipsum dolor sit amet, consectetur adipis elit, sed do eiusmod tempor incididunt ut labore s dolore magna aliqua. Mattis velit sed ullamcorper morbi. Euismod laciniaat quis risus sed vulputate. Tincidunt praesent semper feugiat nibh sed. Tellus in hac habitasse platea dictumst vestibulum rhoncus. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  
-      </div>
-    </article>
-  </section>
+  <main role="main" class="flex-shrink-0">
+    <section class="container">
+      <article class="row bg-light mx-sm-2">
+        <div class="col-sm-12 p-sm-4 clearfix">
+          <h1 class="border-bottom pb-3 ">About Me</h1>
+    
+          <img class="img-fluid float-left py-3 pr-3" width="30%" src="assets/images/My-Profle-Pic.png" alt="sorry!">
+    
+          <p>I have been in the U.S. for about 9 years and spent most of my time pursuing a carreer as a pharmacist. My background is strong in science and medicine since I went to UCIrvine and Touro Pharmacy School. Considering a carreer change is a scary, simply because I have a good job at a pharmacy already, but also exciting place to be. I want to pursue a carreer not only to make a living, but also for my own enjoyment.</p>
+          <p>An opportunity arised when I tried to create a custom dynamic stamp for an engineering company. With no background in Javascript or coding, I have successfully created the dynamic stamp by just googling and studying a few examples. It was this moment that I remembered what fun felt like again.</p>
+          <p>I took the first step toward changing my carreer by enrolling in UCBerkeley Coding Bootcamp. I used to think that I would not want to be one of those people spending all day typing at a keyboard. And now, one of my hobbies is spending all day at my computer and learning to code.</p>
+    
+        </div>
+      </article>
+    </section>
+  </main>
 
 <!--!Footer-->
 
-  <footer class="footer" style="background-color: #666666" class="pt-4 text-white-50 w-100">
+  <footer class="footer mt-auto">
       <div class="container"> 
-        <p class="text-center">Copyright &copy;</p>
+        <p class="text-center text-white-50 pt-3">Copyright &copy;</p>
       </div>
   </footer>
 

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
     
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Portfolio About Me</title>
 
     <!-- Bootstrap CSS order: 1-reset.css 2-bootstrap css 3-mycss -->
@@ -14,13 +16,13 @@
 </head>
 
 <!--!Navigation Bar-->
-<body>
+<body class="d-flex flex-column h-100">
 
 <!--navbar is flexbox-->
-  <nav class="navbar navbar-expand navbar-light bg-light px-5 py-0">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light px-5 py-0">
     <div class="container">  <!--put div inside navbar to align the content only-->
 
-      <a class="navbar-brand text-white m-0 p-4" style="background-color: #4aaaa5" href="index.html">
+      <a class="navbar-brand text-white p-4" style="background-color: #4aaaa5" href="index.html">
         Tracy Nguyen
       </a>
 
@@ -53,49 +55,47 @@
 <!--!Main Section-->
  
 
-  <section class="container">
-    <article class="row bg-light my-5">
-      <div class="col-sm-12 p-sm-4" id="gallery">
-        <h1 class="border-bottom pb-3">Portfolio</h1>
+  <main role="main" class="flex-shrink-0">
+    <section class="container">
+      <article class="row bg-light mx-sm-2">
+        <div class="col-sm-12 p-sm-4" id="gallery">
+          <h1 class="border-bottom pb-3">Portfolio</h1>
+  
+          <div class="row text-white text-center">
 
-        <div class="row py-4 text-white text-center">
-          <div class="col-4">
-            <img class="img-fluid" src="assets/images/cartman2.jpg" alt="Cartman">
-            <h3>Example 1</h3>
+            <div class="col-sm-4">
+              <img class="img-fluid w-100" src="assets/images/cartman2.jpg" alt="Cartman">
+            </div>
+  
+            <div class="col-sm-4"> <!--? have to define width so .img-fluid works -->
+              <img class="img-fluid w-100" src="assets/images/buttter.jpg" alt="buttter">
+            </div>
+  
+            <div class="col-sm-4">
+              <img class="img-fluid w-100" src="assets/images/Kyle.jpg" alt="Kyle">
+            </div>
           </div>
-
-          <div class="col-4"> <!--? .img-fluid applies mw-100 and auto height -->
-            <img class="img-fluid" src="assets/images/buttter.jpg" alt="buttter">
-            <h3>Example 2</h3>
+  
+          <div class="row text-white text-center">
+            <div class="col-sm-4">
+              <img class="img-fluid w-100" src="assets/images/stan.jpg" alt="stan">
+              
+            </div>
+            <div class="col-sm-4">
+              <img class="img-fluid w-100" src="assets/images/kenny.png" alt="Kenny">
+            </div>
           </div>
-
-          <div class="col-4">
-            <img class="img-fluid" src="assets/images/Kyle.jpg" alt="Kyle">
-            <h3>Example 3</h3>
-          </div>
-        </div>
-
-        <div class="row py-4 text-white text-center">
-          <div class="col-4">
-            <img class="img-fluid" src="assets/images/stan.jpg" alt="stan">
-            <h3>Example 4</h3>
             
-          </div>
-          <div class="col-4">
-            <img class="img-fluid" src="assets/images/kenny.png" alt="Kenny">
-            <h3>Example 5</h3>
-          </div>
         </div>
-          
-      </div>
-    </article>
-  </section>
+      </article>
+    </section>
+  </main>
 
 <!--!Footer-->
 
-<footer class="footer" style="background-color: #666666" class="pt-4 text-white-50 w-100">
+<footer class="footer mt-auto">
     <div class="container">
-        <p class="text-center">Copyright &copy;</p>
+        <p class="text-center text-white-50 pt-3">Copyright &copy;</p>
     </div>
 </footer>
 

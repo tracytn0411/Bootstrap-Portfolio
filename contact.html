@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Contact</title>
 
   <!-- Bootstrap CSS order: 1-reset.css 2-bootstrap css 3-mycss -->
   <link rel="stylesheet" href="assets/css/reset.css">
@@ -14,9 +16,9 @@
 </head>
 
 <!--!Navigation Bar-->
-<body>
+<body class="d-flex flex-column h-100">
 
-  <nav class="navbar navbar-expand navbar-light bg-light px-5 py-0">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light px-5 py-0">
     <div class="container">  <!--put div inside navbar to align the content only-->
 
       <a class="navbar-brand text-white m-0 p-4" style="background-color: #4aaaa5" href="index.html">
@@ -51,39 +53,41 @@
 
 <!--!Main Section-->
 
-  <section class="container">
-    <article class="row bg-light my-5">
-      <div class="col-sm-12 p-sm-4">
-        <h1 class="border-bottom pb-3 ">Contact</h1>
-      
-        <!--add a wrapper element with .form-group around each form control to ensure proper margin-->
-        <form id="contact-form">
-          <div class="form-group">
-            <label for="username">Name</label>
-            <input type="text" id="username" class="form-control" placeholder="John Smith">
-          </div>
-
-          <div class="form-group">
-            <label for="inputemail">Email</label>
-            <input type="email" id="inputemail" class="form-control" placeholder="example@gmail.com">
-          </div>
-
-          <div class="form-group">
-            <label for="inputmessage">Message</label>
-            <textarea id="inputmessage" rows="10" class="form-control"  placeholder=""></textarea>
-          </div>
-        </form>
-
-      </div>
-    </article>
-  </section>
+  <main role="main" class="flex-shrink-up">
+    <section class="container">
+      <article class="row bg-light mx-sm-2">
+        <div class="col-sm-12 p-sm-4">
+          <h1 class="border-bottom pb-3 ">Contact</h1>
+        
+          <!--add a wrapper element with .form-group around each form control to ensure proper margin-->
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="username">Name</label>
+              <input type="text" id="username" class="form-control" placeholder="John Smith">
+            </div>
+  
+            <div class="form-group">
+              <label for="inputemail">Email</label>
+              <input type="email" id="inputemail" class="form-control" placeholder="example@gmail.com">
+            </div>
+  
+            <div class="form-group">
+              <label for="inputmessage">Message</label>
+              <textarea id="inputmessage" rows="10" class="form-control"  placeholder=""></textarea>
+            </div>
+          </form>
+  
+        </div>
+      </article>
+    </section>
+  </main>
 
 
 <!--!Footer-->
 
-<footer class="footer" style="background-color: #666666" class="pt-4 text-white-50 w-100">
+<footer class="footer mt-auto">
   <div class="container">
-      <p class="text-center">Copyright &copy;</p>
+      <p class="text-center text-white-50 pt-3">Copyright &copy;</p>
   </div>
 </footer>
 
