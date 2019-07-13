@@ -22,7 +22,6 @@ main > .container {
   font-family: Georgia, Times, "Times New Roman", serif;   
   font-size: 30px;
 }
-
   
 h1 {
     color: #4aaaa5;
@@ -36,8 +35,17 @@ h1 {
 
 /* Portfolio Gallery */
 #gallery img {
-  max-width: 250px;
+  max-height: 250px;
   padding: 20px 0;
 }
 
- 
+.thumbnail {
+  position: relative;
+}
+.figcaption {
+  position: absolute;
+  background: #4aaaa5a9;
+  top: 45%;
+  left: o;
+  width: 100%;
+}
